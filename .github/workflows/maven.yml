@@ -28,6 +28,6 @@ jobs:
           mvn tomcat:deploy -DskipTests -f ./SpringProjectForJenkins/pom.xml || \
           mvn tomcat:redeploy -DskipTests -f ./SpringProjectForJenkins/pom.xml
         env:
-          TOMCAT_USERNAME: my  # Tomcat 사용자명
-          TOMCAT_PASSWORD: my  # Tomcat 비밀번호
+          TOMCAT_USERNAME: my # Tomcat 사용자명
+          TOMCAT_PASSWORD: my # Tomcat 비밀번호
           TOMCAT_URL: 'https://duck-robust-recently.ngrok-free.app/manager/text' # Tomcat URL

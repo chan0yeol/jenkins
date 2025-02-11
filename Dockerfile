@@ -2,7 +2,7 @@
 FROM chan0yeol/sprimg-tomcat-app:1.2
 
 # 필수 패키지 설치 (curl, git, openjdk-17-jdk 등)
-RUN apt-get update && apt-get install -y curl
+# RUN apt-get update && apt-get install -y curl
 
 # 작업 디렉터리 생성
 WORKDIR /home/spring

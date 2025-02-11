@@ -24,9 +24,7 @@ jobs:
         run: mvn clean install -DskipTests -f ./SpringProjectForJenkins/pom.xml  # 빌드 및 의존성 설치( 테스트는 스킵 )
 
       - name: Deploy to Tomcat Server
-        run: |
-          mvn tomcat:deploy -DskipTests -f ./SpringProjectForJenkins/pom.xml || \
-          mvn tomcat:redeploy -DskipTests -f ./SpringProjectForJenkins/pom.xml
+        run: mvn tomcat:deploy -DskipTests -f ./SpringProjectForJenkins/pom.xml || mvn tomcat:redeploy -DskipTests -f ./SpringProjectForJenkins/pom.xml
         env:
           TOMCAT_USERNAME: my # Tomcat 사용자명
           TOMCAT_PASSWORD: my # Tomcat 비밀번호

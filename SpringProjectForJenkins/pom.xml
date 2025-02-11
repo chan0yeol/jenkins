@@ -264,8 +264,8 @@
 					<!--<url>http://localhost:9000/manager/text</url>-->
 					<url>https://duck-robust-recently.ngrok-free.app/manager/text</url>
 					<path>/${project.build.finalName}</path>
-					<!--<username>my</username>
-					<password>my</password> -->
+					<username>my</username>
+					<password>my</password>
 				</configuration>
 			</plugin>
 		</plugins>

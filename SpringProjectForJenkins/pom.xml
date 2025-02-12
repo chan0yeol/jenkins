@@ -262,7 +262,7 @@
 				<version>1.1</version>
 				<configuration>
 					<!--<url>http://localhost:9000/manager/text</url>-->
-					<url>https://anchovy-quality-hen.ngrok-free.app/manager/text</url>
+					<url>http://127.17.0.1:8082/manager/text</url>
 					<path>/${project.build.finalName}</path>
 					<username>my</username>
 					<password>my</password>
